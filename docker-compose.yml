@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  sales.webapi:
+    image: ${DOCKER_REGISTRY-}saleswebapi
+    build:
+      context: .
+      dockerfile: Sales.WebApi/Dockerfile
