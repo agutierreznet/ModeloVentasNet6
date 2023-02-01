@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-////////////////////
+/////////////////////
 
 var appSettingsSection = builder.Configuration.GetSection("AppSettings");
 var secreto = appSettingsSection.GetSection("Secreto").Value;// GetSection("AppSettings:Secreto")
